@@ -34,7 +34,7 @@ public class CustomPhoneStateListener extends PhoneStateListener {
                 Log.d(PhoneListenService.TAG, "CustomPhoneStateListener onCallStateChanged endCall");
                 HangUpTelephonyUtil.endCall(mContext);
                 break;
-            case TelephonyManager.CALL_STATE_OFFHOOK:   // 来电接通 或者 去电，去电接通
+            case TelephonyManager.CALL_STATE_OFFHOOK:    // 来电接通 或者 去电，去电接通  但是没法区分
                 break;
         }
     }
